@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#fff5f8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="X DKV 2">
+    <title>Biodata Kelas X DKV 2 - SMKN 4 BATAM</title>
+    <!-- Google Fonts: Playfair Display (Coquette Serif) + Quicksand (Soft Rounded Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ==========================================================================
+           COQUETTE THUMB-FRIENDLY WEB APP STYLES (CLEAN FULL VIEWPORT)
+           ========================================================================== */
+        :root {
+            --bg-primary: #fff7fa;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --text-primary: #523a44;
+            --text-secondary: #8c6b78;
+            --accent: #e87a9f;
+            --accent-deep: #d45d85;
+            --accent-light: #ffeaf1;
+            --border-lace: #f7c5d6;
+            --shadow-soft: 0 8px 22px rgba(232, 122, 159, 0.14);
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Quicksand', sans-serif;
+            --radius-card: 22px;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1a131c;
+            --bg-secondary: #241b27;
+            --bg-card: #2c2130;
+            --text-primary: #fbeaf0;
+            --text-secondary: #c9a7b5;
+            --accent: #f28cb0;
+            --accent-deep: #ff6b9e;
+            --accent-light: #3b2838;
+            --border-lace: #54394c;
+            --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        input, select, textarea {
+            user-select: auto;
+        }
+
+        /* VARIED SMOOTH POP-UP & ELASTIC BOUNCE ANIMATIONS */
+        @keyframes appLaunchPop {
+            0% { opacity: 0; transform: scale(0.93) translateY(18px); }
+            65% { opacity: 1; transform: scale(1.01) translateY(-3px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        @keyframes screenZoomPop {
+            0% { opacity: 0; transform: scale(0.93) translateY(14px); }
+            70% { opacity: 1; transform: scale(1.01) translateY(-2px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        @keyframes screenSlideUpPop {
+            0% { opacity: 0; transform: translateY(24px) scale(0.96); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes screenFlipPop {
+            0% { opacity: 0; transform: perspective(700px) rotateX(8deg) scale(0.95); }
+            100% { opacity: 1; transform: perspective(700px) rotateX(0deg) scale(1); }
+        }
+
+        @keyframes bottomSheetPop {
+            0% { opacity: 0; transform: translateY(100%) scale(0.96); }
+            75% { opacity: 1; transform: translateY(-5px) scale(1.01); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes ribbonFloat {
+            0%, 100% { transform: translateX(-50%) translateY(0) rotate(-3deg); }
+            50% { transform: translateX(-50%) translateY(-4px) rotate(3deg); }
+        }
+
+        html, body {
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            font-family: var(--font-sans);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* CLEAN FULL-VIEWPORT APP CONTAINER (NO PHONE BEZEL / NO STATUS BAR) */
+        .app-shell {
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            background-color: var(--bg-primary);
+            background-image: radial-gradient(var(--border-lace) 1px, transparent 1px);
+            background-size: 22px 22px;
+            animation: appLaunchPop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        /* COQUETTE TOP APP HEADER */
+        .app-header {
+            flex-shrink: 0;
+            height: 60px;
+            background: var(--bg-secondary);
+            border-bottom: 2px dashed var(--border-lace);
+            padding: 0 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 50;
+            box-shadow: 0 4px 14px rgba(232, 122, 159, 0.08);
+        }
+
+        .header-inner {
+            width: 100%;
+            max-width: 680px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .app-brand {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .app-brand:active { transform: scale(0.92); }
+
+        .header-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        /* UNIVERSAL POP-UP BUTTON INTERACTION */
+        .pop-btn {
+            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s, background-color 0.2s;
+            cursor: pointer;
+        }
+
+        .pop-btn:hover {
+            transform: scale(1.04) translateY(-2px);
+            box-shadow: 0 8px 18px rgba(232, 122, 159, 0.25);
+        }
+
+        .pop-btn:active {
+            transform: scale(0.92) translateY(1px);
+        }
+
+        .pill-btn {
+            background: var(--accent-light);
+            border: 1.5px solid var(--border-lace);
+            color: var(--accent-deep);
+            padding: 8px 14px;
+            border-radius: 50px;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pill-btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* VIEWS CONTAINER (NO OUTER PAGE SCROLL) */
+        .views-wrapper {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .view-screen {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            max-width: 680px;
+            display: none;
+            flex-direction: column;
+            padding: 16px 16px 20px;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .view-screen::-webkit-scrollbar { display: none; }
+
+        .view-screen.active {
+            display: flex;
+            animation: screenZoomPop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        #studentsView.active {
+            animation: screenSlideUpPop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        #kasView.active {
+            animation: screenFlipPop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        /* COQUETTE TOP SUBNAV */
+        .top-subnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            flex-shrink: 0;
+        }
+
+        .btn-back-coquette {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--accent);
+            color: var(--accent-deep);
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 0.82rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 12px rgba(232, 122, 159, 0.14);
+        }
+
+        .btn-back-coquette:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* 1. HOME SCREEN (ONE-HANDED THUMB REACH) */
+        #homeView {
+            justify-content: space-between;
+            text-align: center;
+            padding-top: 22px;
+            padding-bottom: 16px;
+        }
+
+        .coquette-hero-card {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-lace);
+            border-radius: 28px;
+            padding: 22px 18px;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+
+        .coquette-hero-card::before {
+            content: '🎀';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.7rem;
+            animation: ribbonFloat 3s ease-in-out infinite;
+        }
+
+        .ribbon-tag {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--accent-deep);
+            border: 1px dashed var(--accent);
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 0.76rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .class-title-serif {
+            font-family: var(--font-serif);
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+            line-height: 1.1;
+            margin-bottom: 6px;
+        }
+
+        .school-meta {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .slogan-quote {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 0.88rem;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            padding: 10px 14px;
+            border-radius: 16px;
+            border: 1px solid var(--border-lace);
+        }
+
+        /* THUMB-FRIENDLY LOWER ACTION GRID */
+        .bottom-thumb-zone {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        .app-grid-menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .app-tile-btn {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-lace);
+            border-radius: 24px;
+            padding: 16px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 7px;
+            box-shadow: var(--shadow-soft);
+            color: var(--text-primary);
+        }
+
+        .tile-icon-bubble {
+            width: 48px;
+            height: 48px;
+            border-radius: 18px;
+            background: var(--accent-light);
+            border: 1.5px dashed var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            color: var(--accent-deep);
+        }
+
+        .app-tile-btn span {
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .app-tile-btn small {
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            margin-top: -3px;
+        }
+
+        .credits-pill {
+            background: var(--bg-secondary);
+            border: 1.5px dashed var(--border-lace);
+            border-radius: 50px;
+            padding: 9px 14px;
+            font-size: 0.76rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .credits-pill strong {
+            color: var(--accent-deep);
+        }
+
+        /* SECTION TITLE IN SUB-VIEWS */
+        .subview-heading {
+            font-family: var(--font-serif);
+            font-size: 1.45rem;
+            color: var(--accent-deep);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        /* STUDENTS GRID (SCROLLABLE AREA ABOVE THUMB CONTROLS) */
+        .students-scroll-area {
+            flex: 1;
+            overflow-y: auto;
+            scrollbar-width: none;
+            padding-bottom: 10px;
+        }
+
+        .students-scroll-area::-webkit-scrollbar { display: none; }
+
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        @media (min-width: 540px) {
+            .students-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .student-card {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border-lace);
+            border-radius: var(--radius-card);
+            padding: 14px 10px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            animation: screenZoomPop 0.38s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+        }
+
+        .student-card::after {
+            content: '🎀';
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            font-size: 0.75rem;
+            opacity: 0.75;
+        }
+
+        .student-card.boy-card::after {
+            content: '🧸';
+        }
+
+        .avatar-frame {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 8px;
+            border-radius: 50%;
+            padding: 3px;
+            border: 2px dashed var(--accent);
+            background: var(--accent-light);
+            overflow: hidden;
+        }
+
+        .boy-card .avatar-frame {
+            border-color: #8ab4f8;
+            background: #eef5ff;
+        }
+
+        [data-theme="dark"] .boy-card .avatar-frame {
+            border-color: #7aa2f7;
+            background: #252c42;
+        }
+
+        .avatar-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .student-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            color: var(--accent-deep);
+            margin-bottom: 2px;
+        }
+
+        .student-card p {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .hobby-badge {
+            display: inline-block;
+            margin-top: 6px;
+            background: var(--accent-light);
+            color: var(--accent-deep);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 50px;
+        }
+
+        /* THUMB-ZONE SEARCH & FILTER AT BOTTOM OF STUDENTS VIEW */
+        .thumb-controls-dock {
+            flex-shrink: 0;
+            padding-top: 10px;
+            border-top: 1.5px dashed var(--border-lace);
+            background: var(--bg-primary);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .filter-chips {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .filter-chips::-webkit-scrollbar { display: none; }
+
+        .chip-btn {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border-lace);
+            color: var(--text-secondary);
+            padding: 6px 13px;
+            border-radius: 50px;
+            font-family: var(--font-sans);
+            font-size: 0.76rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .chip-btn.active {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        .search-bar-coquette {
+            position: relative;
+        }
+
+        .search-bar-coquette i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        .search-bar-coquette input {
+            width: 100%;
+            padding: 11px 16px 11px 40px;
+            border-radius: 50px;
+            border: 1.5px solid var(--border-lace);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.86rem;
+            font-weight: 600;
+            outline: none;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .search-bar-coquette input:focus {
+            border-color: var(--accent);
+        }
+
+        .admin-mini-bar {
+            background: var(--accent-light);
+            border: 1.5px dashed var(--accent);
+            border-radius: 16px;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .admin-card-tools {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .tool-btn {
+            border: none;
+            border-radius: 10px;
+            padding: 5px 10px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .tool-edit { background: #6c9ce8; }
+        .tool-del { background: #e86c82; }
+
+        /* STRUCTURE & ABOUT CARDS */
+        .coquette-list-card {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border-lace);
+            border-radius: var(--radius-card);
+            padding: 14px 16px;
+            margin-bottom: 10px;
+            box-shadow: var(--shadow-soft);
+            animation: screenZoomPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+        }
+
+        .coquette-list-card.featured {
+            background: var(--accent-light);
+            border: 2px dashed var(--accent);
+        }
+
+        .role-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent-deep);
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .person-name {
+            font-family: var(--font-serif);
+            font-size: 1.04rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 9px 0;
+            border-bottom: 1px dashed var(--border-lace);
+            font-size: 0.86rem;
+        }
+
+        .info-row:last-child { border-bottom: none; }
+
+        /* KAS CARDS */
+        .kas-card {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border-lace);
+            border-radius: var(--radius-card);
+            padding: 15px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .kas-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            padding-bottom: 6px;
+            border-bottom: 1.5px dashed var(--border-lace);
+        }
+
+        .kas-month {
+            font-family: var(--font-serif);
+            font-size: 1.06rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+        }
+
+        .saldo-pill {
+            padding: 4px 11px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .saldo-neg { background: #ffe4e8; color: #d6455d; }
+        .saldo-pos { background: #e3f9ed; color: #229954; }
+
+        /* THUMB-FRIENDLY BOTTOM NAVIGATION DOCK */
+        .bottom-dock {
+            flex-shrink: 0;
+            height: 70px;
+            background: var(--bg-secondary);
+            border-top: 2px dashed var(--border-lace);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 8px env(safe-area-inset-bottom, 6px);
+            z-index: 60;
+            box-shadow: 0 -4px 16px rgba(232, 122, 159, 0.08);
+        }
+
+        .dock-inner {
+            width: 100%;
+            max-width: 680px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .dock-item {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            font-family: var(--font-sans);
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 8px 14px;
+            border-radius: 18px;
+        }
+
+        .dock-item i {
+            font-size: 1.2rem;
+        }
+
+        .dock-item.active {
+            color: var(--accent-deep);
+            background: var(--accent-light);
+        }
+
+        /* COQUETTE BOTTOM-SHEET MODAL (THUMB ACCESSIBLE) */
+        .modal-backdrop {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(45, 25, 35, 0.55);
+            backdrop-filter: blur(4px);
+            z-index: 200;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .bottom-sheet {
+            width: 100%;
+            max-width: 540px;
+            max-height: 88vh;
+            background: var(--bg-secondary);
+            border-top: 3px solid var(--accent);
+            border-radius: 30px 30px 0 0;
+            padding: 14px 20px 28px;
+            overflow-y: auto;
+            position: relative;
+            animation: bottomSheetPop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        .sheet-handle {
+            width: 44px;
+            height: 5px;
+            background: var(--border-lace);
+            border-radius: 10px;
+            margin: 0 auto 12px;
+        }
+
+        .close-sheet-btn {
+            position: absolute;
+            top: 14px;
+            right: 18px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: none;
+            background: var(--accent-light);
+            color: var(--accent-deep);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .sheet-avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 3px dashed var(--accent);
+            padding: 3px;
+            object-fit: cover;
+            margin: 0 auto 10px;
+            display: block;
+            background: var(--accent-light);
+        }
+
+        .bio-detail-box {
+            background: var(--bg-primary);
+            border: 1.5px solid var(--border-lace);
+            border-radius: 20px;
+            padding: 12px 14px;
+            margin-top: 12px;
+        }
+
+        .bio-item {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-lace);
+            font-size: 0.86rem;
+        }
+
+        .bio-item:last-child { border-bottom: none; }
+        .bio-item strong { color: var(--accent-deep); white-space: nowrap; }
+        .bio-item span { text-align: right; font-weight: 600; }
+
+        .motto-ribbon-box {
+            margin-top: 12px;
+            background: var(--accent-light);
+            border: 1.5px dashed var(--accent);
+            border-radius: 16px;
+            padding: 11px;
+            text-align: center;
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 0.88rem;
+            color: var(--accent-deep);
+        }
+
+        /* FORMS & CUSTOM TOAST */
+        .form-field { margin-bottom: 11px; }
+        .form-field label {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+            margin-bottom: 4px;
+        }
+        .form-field input, .form-field select, .form-field textarea {
+            width: 100%;
+            padding: 10px 13px;
+            border-radius: 14px;
+            border: 1.5px solid var(--border-lace);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.86rem;
+            font-weight: 600;
+        }
+
+        .primary-coquette-btn {
+            width: 100%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 50px;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 0.92rem;
+            margin-top: 6px;
+            box-shadow: 0 6px 16px rgba(232, 122, 159, 0.35);
+        }
+
+        .coquette-toast {
+            position: fixed;
+            top: 72px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-20px);
+            background: var(--accent-deep);
+            color: #fff;
+            padding: 9px 20px;
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            z-index: 500;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+            white-space: nowrap;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .coquette-toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-shell">
+        <!-- TOAST NOTIFICATION -->
+        <div id="coquetteToast" class="coquette-toast">🎀 Tersimpan!</div>
+
+        <!-- COQUETTE TOP HEADER (CLEAN - NO FAKE PHONE STATUS BAR) -->
+        <header class="app-header">
+            <div class="header-inner">
+                <div class="app-brand" onclick="switchView('homeView')">
+                    <span>🎀</span> X DKV 2
+                </div>
+                <div class="header-actions">
+                    <button id="themeToggle" class="pill-btn pop-btn" title="Ganti Tema">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button id="adminBtn" class="pill-btn pop-btn">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Admin
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN APP SCREENS -->
+        <main class="views-wrapper">
+
+            <!-- 1. HOME SCREEN -->
+            <section id="homeView" class="view-screen active">
+                <div class="coquette-hero-card">
+                    <span class="ribbon-tag">🩰 Coquette Class Space • 2026 - 2027</span>
+                    <h1 class="class-title-serif">X DKV 2</h1>
+                    <p class="school-meta">SMKN 4 BATAM • Desain Komunikasi Visual</p>
+                    <p class="slogan-quote">“Kreatif Tanpa Batas, Bersatu Dalam Karya, Berprestasi Bersama!”</p>
+                </div>
+
+                <!-- ONE-HANDED THUMB ZONE MENU -->
+                <div class="bottom-thumb-zone">
+                    <div class="app-grid-menu">
+                        <button class="app-tile-btn pop-btn" onclick="switchView('studentsView')">
+                            <div class="tile-icon-bubble">🌷</div>
+                            <span>Anggota Kelas</span>
+                            <small>36 Siswa DKV 2</small>
+                        </button>
+                        <button class="app-tile-btn pop-btn" onclick="switchView('structureView')">
+                            <div class="tile-icon-bubble">👑</div>
+                            <span>Struktur Kelas</span>
+                            <small>Wali & Pengurus</small>
+                        </button>
+                        <button class="app-tile-btn pop-btn" onclick="switchView('aboutView')">
+                            <div class="tile-icon-bubble">💌</div>
+                            <span>Tentang Kelas</span>
+                            <small>Profil & Info</small>
+                        </button>
+                        <button class="app-tile-btn pop-btn" onclick="switchView('kasView')">
+                            <div class="tile-icon-bubble">👛</div>
+                            <span>Laporan Kas</span>
+                            <small>Juli – September</small>
+                        </button>
+                    </div>
+
+                    <!-- CREDITS -->
+                    <div class="credits-pill">
+                        🎀 Created with love by <strong>Livi, Kyara, Jeck, & Gracia</strong> 🎀
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. ANGGOTA KELAS VIEW -->
+            <section id="studentsView" class="view-screen">
+                <div class="top-subnav">
+                    <button class="btn-back-coquette pop-btn" onclick="switchView('homeView')">
+                        <i class="fa-solid fa-chevron-left"></i> Kembali
+                    </button>
+                    <span id="studentCountBadge" class="ribbon-tag" style="margin:0;">36 Siswa 🎀</span>
+                </div>
+
+                <h2 class="subview-heading">🌷 Anggota X DKV 2</h2>
+
+                <!-- ADMIN BAR -->
+                <div id="adminStatusBar" class="admin-mini-bar" style="display: none;">
+                    <span id="activeAdminEmail"></span>
+                    <div style="display:flex; gap:5px;">
+                        <button onclick="openAddStudentModal()" class="tool-btn pop-btn" style="background:var(--accent-deep);">+ Tambah</button>
+                        <button onclick="logoutAdmin()" class="tool-btn tool-del pop-btn">Keluar</button>
+                    </div>
+                </div>
+
+                <!-- SCROLLABLE STUDENT CARDS -->
+                <div class="students-scroll-area">
+                    <div class="students-grid" id="studentsGrid"></div>
+                </div>
+
+                <!-- THUMB-REACHABLE FILTER & SEARCH AT BOTTOM -->
+                <div class="thumb-controls-dock">
+                    <div class="filter-chips">
+                        <button class="chip-btn active pop-btn" onclick="setGenderFilter('ALL', this)">Semua</button>
+                        <button class="chip-btn pop-btn" onclick="setGenderFilter('Perempuan', this)">🎀 Perempuan</button>
+                        <button class="chip-btn pop-btn" onclick="setGenderFilter('Laki-laki', this)">🧸 Laki-laki</button>
+                        <button class="chip-btn pop-btn" onclick="setGenderFilter('GAMBAR', this)">🎨 Hobi Gambar</button>
+                    </div>
+                    <div class="search-bar-coquette">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchInput" placeholder="Cari nama, panggilan, hobi, cita-cita...">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. STRUKTUR KELAS VIEW -->
+            <section id="structureView" class="view-screen">
+                <div class="top-subnav">
+                    <button class="btn-back-coquette pop-btn" onclick="switchView('homeView')">
+                        <i class="fa-solid fa-chevron-left"></i> Kembali
+                    </button>
+                    <span class="ribbon-tag" style="margin:0;">Pengurus 👑</span>
+                </div>
+
+                <h2 class="subview-heading">👑 Struktur Organisasi</h2>
+
+                <div class="coquette-list-card featured">
+                    <span class="role-label">🌸 Wali Kelas</span>
+                    <div class="person-name">RIZKA SEPTIALIS S.PD</div>
+                </div>
+                <div class="coquette-list-card featured">
+                    <span class="role-label">🎀 Ketua Kelas</span>
+                    <div class="person-name">MAVI MARMARA</div>
+                </div>
+                <div class="coquette-list-card featured">
+                    <span class="role-label">✨ Wakil Ketua Kelas</span>
+                    <div class="person-name">MUHAMMAD FARREL FERDIAN</div>
+                </div>
+                <div class="coquette-list-card">
+                    <span class="role-label">📝 Sekretaris 1</span>
+                    <div class="person-name">SYASYA DIYANTI HUSODO</div>
+                </div>
+                <div class="coquette-list-card">
+                    <span class="role-label">📝 Sekretaris 2</span>
+                    <div class="person-name">NABILA PUTRI RIZANA</div>
+                </div>
+                <div class="coquette-list-card">
+                    <span class="role-label">💰 Bendahara 1</span>
+                    <div class="person-name">AVARA MOHANA S.A</div>
+                </div>
+                <div class="coquette-list-card">
+                    <span class="role-label">💰 Bendahara 2</span>
+                    <div class="person-name">NABILA DWI FEBRIANA</div>
+                </div>
+                <div class="coquette-list-card">
+                    <span class="role-label">🛡️ Seksi Keamanan 1</span>
+                    <div class="person-name">KYARA RAYSA H</div>
+                </div>
+                <div class="coquette-list-card">
+                    <span class="role-label">🛡️ Seksi Keamanan 2</span>
+                    <div class="person-name">ANGELYN NATASYA TAMBUNAN</div>
+                </div>
+                <div class="coquette-list-card">
+                    <span class="role-label">🧹 Seksi Kebersihan 1</span>
+                    <div class="person-name">JECK LISON</div>
+                </div>
+                <div class="coquette-list-card">
+                    <span class="role-label">🧹 Seksi Kebersihan 2</span>
+                    <div class="person-name">REDNIA SIBURIAN</div>
+                </div>
+            </section>
+
+            <!-- 4. TENTANG KELAS VIEW -->
+            <section id="aboutView" class="view-screen">
+                <div class="top-subnav">
+                    <button class="btn-back-coquette pop-btn" onclick="switchView('homeView')">
+                        <i class="fa-solid fa-chevron-left"></i> Kembali
+                    </button>
+                    <span class="ribbon-tag" style="margin:0;">Info Kelas 💌</span>
+                </div>
+
+                <h2 class="subview-heading">💌 Tentang Kelas</h2>
+
+                <div class="coquette-list-card">
+                    <div class="info-row"><strong>Nama Kelas</strong><span>X DKV 2</span></div>
+                    <div class="info-row"><strong>Jurusan</strong><span>Desain Komunikasi Visual</span></div>
+                    <div class="info-row"><strong>Sekolah</strong><span>SMKN 4 BATAM</span></div>
+                    <div class="info-row"><strong>Tahun Ajaran</strong><span>2026 - 2027</span></div>
+                    <div class="info-row"><strong>Wali Kelas</strong><span>RIZKA SEPTIALIS S.PD</span></div>
+                    <div class="info-row"><strong>Jumlah Siswa</strong><span>36 Siswa</span></div>
+                </div>
+
+                <div class="coquette-list-card featured" style="text-align:center;">
+                    <span class="role-label">🎀 Slogan & Motto Kelas</span>
+                    <p style="font-family:var(--font-serif); font-style:italic; margin-top:6px; font-size:0.95rem;">
+                        “Kreatif Tanpa Batas, Bersatu Dalam Karya, Berprestasi Bersama!”
+                    </p>
+                </div>
+
+                <div class="coquette-list-card" style="text-align:center;">
+                    <span class="role-label">🩰 Tim Pembuat Website</span>
+                    <p style="font-weight:700; color:var(--accent-deep); margin-top:4px;">
+                        Livi • Kyara • Jeck • Gracia
+                    </p>
+                </div>
+            </section>
+
+            <!-- 5. LAPORAN KAS VIEW -->
+            <section id="kasView" class="view-screen">
+                <div class="top-subnav">
+                    <button class="btn-back-coquette pop-btn" onclick="switchView('homeView')">
+                        <i class="fa-solid fa-chevron-left"></i> Kembali
+                    </button>
+                    <span class="ribbon-tag" style="margin:0;">Keuangan 👛</span>
+                </div>
+
+                <h2 class="subview-heading">👛 Laporan Uang Kas</h2>
+
+                <div class="kas-card">
+                    <div class="kas-header">
+                        <span class="kas-month">🗓️ Bulan Juli</span>
+                        <span class="saldo-pill saldo-neg">Minus Rp160.561</span>
+                    </div>
+                    <div class="info-row"><span>Total Pemasukan</span><strong>Rp56.439</strong></div>
+                    <div class="info-row"><span>Total Pengeluaran</span><strong>Rp217.000</strong></div>
+                </div>
+
+                <div class="kas-card">
+                    <div class="kas-header">
+                        <span class="kas-month">🗓️ Bulan Agustus</span>
+                        <span class="saldo-pill saldo-pos">Sisa Rp360.000</span>
+                    </div>
+                    <div class="info-row"><span>Total Pemasukan</span><strong>Rp705.000</strong></div>
+                    <div class="info-row"><span>Total Pengeluaran</span><strong>Rp335.000</strong></div>
+                </div>
+
+                <div class="kas-card">
+                    <div class="kas-header">
+                        <span class="kas-month">🗓️ Bulan September</span>
+                        <span class="saldo-pill saldo-pos">Sisa Rp197.700</span>
+                    </div>
+                    <div class="info-row"><span>Akumulasi Pembayaran</span><strong>Rp660.000</strong></div>
+                    <div class="info-row"><span>Total Pengeluaran</span><strong>Rp630.000</strong></div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ONE-HANDED THUMB BOTTOM NAVIGATION DOCK -->
+        <nav class="bottom-dock">
+            <div class="dock-inner">
+                <button class="dock-item active pop-btn" data-target="homeView" onclick="switchView('homeView')">
+                    <i class="fa-solid fa-house-chimney-heart"></i>
+                    <span>Beranda</span>
+                </button>
+                <button class="dock-item pop-btn" data-target="studentsView" onclick="switchView('studentsView')">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Anggota</span>
+                </button>
+                <button class="dock-item pop-btn" data-target="structureView" onclick="switchView('structureView')">
+                    <i class="fa-solid fa-crown"></i>
+                    <span>Struktur</span>
+                </button>
+                <button class="dock-item pop-btn" data-target="aboutView" onclick="switchView('aboutView')">
+                    <i class="fa-solid fa-ribbon"></i>
+                    <span>Tentang</span>
+                </button>
+                <button class="dock-item pop-btn" data-target="kasView" onclick="switchView('kasView')">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Kas</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- BOTTOM-SHEET MODAL: BIODATA LENGKAP SISWA -->
+        <div id="studentModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <div id="modalDetails"></div>
+            </div>
+        </div>
+
+        <!-- BOTTOM-SHEET MODAL: ADMIN LOGIN -->
+        <div id="adminLoginModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <h2 style="font-family:var(--font-serif); color:var(--accent-deep); text-align:center;">🎀 Login Admin Kelas</h2>
+                <p style="font-size:0.78rem; text-align:center; color:var(--text-secondary); margin:6px 0 14px;">
+                    Masukkan email admin dan kode akses untuk mengelola biodata & foto profil.
+                </p>
+                <form id="adminLoginForm">
+                    <div class="form-field">
+                        <label>Email Admin</label>
+                        <input type="email" id="adminEmailInput" required placeholder="nama@email.com">
+                    </div>
+                    <div class="form-field">
+                        <label>Kode Sandi</label>
+                        <input type="password" id="adminPasswordInput" required placeholder="••••••">
+                    </div>
+                    <button type="submit" class="primary-coquette-btn pop-btn">Masuk Mode Admin ✨</button>
+                </form>
+                <div id="savedAdminsList" style="margin-top:12px; font-size:0.74rem; color:var(--text-secondary); text-align:center;"></div>
+            </div>
+        </div>
+
+        <!-- BOTTOM-SHEET MODAL: EDIT / TAMBAH SISWA -->
+        <div id="editStudentModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <h2 id="editModalTitle" style="font-family:var(--font-serif); color:var(--accent-deep); text-align:center; margin-bottom:12px;">Edit Biodata Siswa</h2>
+                <form id="editStudentForm">
+                    <input type="hidden" id="editStudentId">
+                    <div class="form-field">
+                        <label>Nama Lengkap</label>
+                        <input type="text" id="editNama" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Nama Panggilan</label>
+                        <input type="text" id="editPanggilan">
+                    </div>
+                    <div class="form-field">
+                        <label>Foto Profil (Tersimpan Permanen)</label>
+                        <input type="file" id="editFoto" accept="image/*">
+                    </div>
+                    <div class="form-field">
+                        <label>Jenis Kelamin</label>
+                        <select id="editGender">
+                            <option value="Perempuan">Perempuan</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Hobi</label>
+                        <input type="text" id="editHobi">
+                    </div>
+                    <div class="form-field">
+                        <label>Cita-cita</label>
+                        <input type="text" id="editCita">
+                    </div>
+                    <div class="form-field">
+                        <label>Hewan Kesukaan</label>
+                        <input type="text" id="editHewan">
+                    </div>
+                    <div class="form-field">
+                        <label>Makanan Favorit</label>
+                        <input type="text" id="editMakanan">
+                    </div>
+                    <div class="form-field">
+                        <label>Kata-kata / Motto Pribadi</label>
+                        <textarea id="editMotto" rows="2"></textarea>
+                    </div>
+                    <button type="submit" class="primary-coquette-btn pop-btn">Simpan Perubahan 🎀</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==========================================================================
+        // DATA 36 SISWA X DKV 2 (TANPA DIKA & ALVANY, TANPA USERNAME INSTAGRAM)
+        // ==========================================================================
+        const defaultStudentsData = [
+            { id: 1, nama: "ADARA NURFIANSYAH", panggilan: "Adara", gender: "Perempuan", hobi: "Menggambar", cita: "Pengusaha", hewan: "Kucing", makanan: "Dendeng balado", motto: "Berkarya dengan hati dan penuh warna!", foto: "" },
+            { id: 2, nama: "ADITIYA ALFARIZ", panggilan: "Fhariz", gender: "Laki-laki", hobi: "Main game", cita: "Pengusaha", hewan: "Kucing", makanan: "Random", motto: "Tetap santai tapi pasti sukses.", foto: "" },
+            { id: 3, nama: "AISYAHTUL RAMADANIAH S", panggilan: "Syatul", gender: "Perempuan", hobi: "Make up", cita: "Pengusaha butik + MUA", hewan: "Tidak ada", makanan: "Dimsum mentai🤤", motto: "Be your own kind of beautiful.", foto: "" },
+            { id: 4, nama: "ANGELYN NATASYA TAMBUNAN", panggilan: "Angelyn", gender: "Perempuan", hobi: "Badminton dan menggambar", cita: "Wedding photographer / Tokutei Ginau", hewan: "Doberman atau German Shepherd", makanan: "Saksang B2", motto: "Abadikan setiap momen berharga.", foto: "" },
+            { id: 5, nama: "AVARA MOHANA SEPTEVI ANWA", panggilan: "Vara", gender: "Perempuan", hobi: "Volly", cita: "Welder", hewan: "Tidak ada", makanan: "Random", motto: "Berani beda dan pantang menyerah!", foto: "" },
+            { id: 6, nama: "ARTIKA SARI DEVI", panggilan: "Artika", gender: "Perempuan", hobi: "Berenang", cita: "Dokter", hewan: "Hamster sm kuda", makanan: "Chikuro", motto: "Terus melangkah menuju impian.", foto: "" },
+            { id: 8, nama: "CELLINE", panggilan: "Celline", gender: "Perempuan", hobi: "Menggambar", cita: "Dokter", hewan: "Kucing", makanan: "Udang goreng", motto: "Kreativitas adalah kunci masa depan.", foto: "" },
+            { id: 10, nama: "DIMAS FIRMANSYAH RAMADHA", panggilan: "Dimas", gender: "Laki-laki", hobi: "Volly", cita: "Pengusaha", hewan: "Kucing", makanan: "Random", motto: "Usaha keras tidak pernah mengkhianati hasil.", foto: "" },
+            { id: 11, nama: "FATAN RUZAIN", panggilan: "Fatan", gender: "Laki-laki", hobi: "Gambar", cita: "Business man", hewan: "Buaya", makanan: "Random", motto: "Think creative, act smart.", foto: "" },
+            { id: 12, nama: "FRANSISKUS ADVENTINUS", panggilan: "Frans", gender: "Laki-laki", hobi: "Random", cita: "Random", hewan: "Tidak ada", makanan: "Random", motto: "Jalani hari dengan penuh semangat.", foto: "" },
+            { id: 13, nama: "GRACIA LAURA ARDIAN", panggilan: "Gracia", gender: "Perempuan", hobi: "Menggambar", cita: "Illustrator animasi", hewan: "Kucing siam", makanan: "Mochi", motto: "Menghidupkan imajinasi lewat goresan warna.", foto: "" },
+            { id: 14, nama: "HENOKH VALENTINO PAREANG", panggilan: "Henokh", gender: "Laki-laki", hobi: "Random", cita: "Random", hewan: "Tidak ada", makanan: "Random", motto: "Tetap rendah hati dan terus belajar.", foto: "" },
+            { id: 15, nama: "HIRMA MALINI", panggilan: "Hirma", gender: "Perempuan", hobi: "Menulis", cita: "Pengusaha", hewan: "Tidak ada", makanan: "Dimsum mentai", motto: "Setiap kata punya cerita dan makna.", foto: "" },
+            { id: 16, nama: "JECK LISON", panggilan: "Jeck", gender: "Laki-laki", hobi: "Menggambar", cita: "Pengusaha", hewan: "Anjing", makanan: "Samyang", motto: "Kreatif tanpa batas di X DKV 2!", foto: "" },
+            { id: 17, nama: "LENNI AGUSTINA BR SIANTURI", panggilan: "Leni", gender: "Perempuan", hobi: "Make up", cita: "Salon owner", hewan: "Anjing", makanan: "Random", motto: "Percaya diri adalah pesona terbaik.", foto: "" },
+            { id: 18, nama: "LIVI ANGGELIA LIU", panggilan: "Livi", gender: "Perempuan", hobi: "Menggambar", cita: "Animator / Illustrator / Fotografi", hewan: "Hamster", makanan: "Nasi padang", motto: "Create cute things and spread kindness 🎀", foto: "" },
+            { id: 19, nama: "KYARA RAYSA HENGKENGBALA", panggilan: "Kyara", gender: "Perempuan", hobi: "Menggambar", cita: "Ilustrator", hewan: "Tidak ada", makanan: "Random", motto: "Seni adalah bahasa jiwa yang paling indah.", foto: "" },
+            { id: 20, nama: "KHAIRANI NABILA PUTERI", panggilan: "Khai", gender: "Perempuan", hobi: "Denger musik", cita: "Jadi orang sukses", hewan: "Corydoras", makanan: "Sourdough", motto: "Good music, good vibes, great future.", foto: "" },
+            { id: 21, nama: "MOHAMMAD AL RAJA BUDIMAN", panggilan: "Raja", gender: "Laki-laki", hobi: "Random", cita: "Random", hewan: "Tidak ada", makanan: "Random", motto: "Fokus pada tujuan dan terus maju.", foto: "" },
+            { id: 22, nama: "MEDIAN ARYA PANJI SETIAWAN", panggilan: "Median", gender: "Laki-laki", hobi: "Main Game", cita: "Aviation-Related", hewan: "Spotted Seals", makanan: "Random", motto: "Terbang tinggi meraih cita-cita.", foto: "" },
+            { id: 23, nama: "MARIO ARTHA PUTRA LUMBAN", panggilan: "Mario", gender: "Laki-laki", hobi: "Nonton film", cita: "Pengusaha", hewan: "Ayam", makanan: "Random", motto: "Setiap hari adalah kesempatan baru.", foto: "" },
+            { id: 24, nama: "MUHAMMAD RAFI NASUTION", panggilan: "Rafi", gender: "Laki-laki", hobi: "Basket", cita: "Jadi orang sukses", hewan: "Kucing", makanan: "Mie ayam", motto: "Kerja keras hari ini untuk kesuksesan esok.", foto: "" },
+            { id: 25, nama: "MUHAMMAD AZHAR FIRDAUS B", panggilan: "Azhar", gender: "Laki-laki", hobi: "Random", cita: "Random", hewan: "Tidak ada", makanan: "Mie ayam", motto: "Tetap tenang dan lakukan yang terbaik.", foto: "" },
+            { id: 26, nama: "MUHAMMAD FARREL FERDIAN", panggilan: "Farrel", gender: "Laki-laki", hobi: "Main game", cita: "Art director / Movie director / Cinematographer", hewan: "Wombat", makanan: "Ayam penyet", motto: "Direct your own life like a masterpiece.", foto: "" },
+            { id: 27, nama: "NABILA DWI FEBRIANA", panggilan: "Nabila Dwi", gender: "Perempuan", hobi: "Apa aja lh", cita: "Pengusaha", hewan: "Kucing", makanan: "Random", motto: "Nikmati prosesnya dan syukuri hasilnya.", foto: "" },
+            { id: 28, nama: "NABILA PUTRI RIZANA", panggilan: "Nabila Putri", gender: "Perempuan", hobi: "Berenang", cita: "Pengusaha", hewan: "Butterfly", makanan: "Dubai chewy cookie", motto: "Terus bertumbuh indah seperti kupu-kupu.", foto: "" },
+            { id: 29, nama: "RAFIDA RAMTIA JOHOR", panggilan: "Rafida", gender: "Perempuan", hobi: "Masak", cita: "Apa ajalah, yang halal pokoknya", hewan: "Kapibara", makanan: "Roti canai", motto: "Tetap santai seperti kapibara.", foto: "" },
+            { id: 30, nama: "REDNIA SIBURIAN", panggilan: "Nia", gender: "Perempuan", hobi: "Denger musik", cita: "Hakim", hewan: "Panda", makanan: "Seafood", motto: "Keadilan dan kebenaran di atas segalanya.", foto: "" },
+            { id: 31, nama: "SEVIRA SUDRAJAT", panggilan: "Sevira", gender: "Perempuan", hobi: "Masak", cita: "Siap lulus kerja di jepang", hewan: "Monkey", makanan: "Risol manyo", motto: "Ganbatte! Menuju masa depan cerah di Jepang.", foto: "" },
+            { id: 32, nama: "SITI NURASYFA NACHITA PUTRI", panggilan: "Chita", gender: "Perempuan", hobi: "Menggambar", cita: "Desainer busana", hewan: "Tidak ada", makanan: "Random", motto: "Mendesain mimpi menjadi kenyataan.", foto: "" },
+            { id: 33, nama: "SYASYA DIANTI HUSODO", panggilan: "Syasya", gender: "Perempuan", hobi: "Random", cita: "Random", hewan: "Kucing", makanan: "Lele goreng", motto: "Selalu ceria dan penuh energi positif.", foto: "" },
+            { id: 34, nama: "PAHIRAH AULIA RAMADANI", panggilan: "Pahira", gender: "Perempuan", hobi: "Random", cita: "Random", hewan: "Rubah merah", makanan: "Cheese cake", motto: "Manis dan ceria di setiap langkah.", foto: "" },
+            { id: 35, nama: "YUSUF PUTRA ABDILLAH SYUKRO", panggilan: "Yusuf", gender: "Laki-laki", hobi: "Mengaji", cita: "Investor", hewan: "Ayam", makanan: "Mie ayam", motto: "Ilmu dan akhlak adalah investasi terbaik.", foto: "" },
+            { id: 36, nama: "MAVI MARMARA", panggilan: "Mavi", gender: "Laki-laki", hobi: "Olahraga", cita: "Arsitek", hewan: "Kucing", makanan: "Nasgor", motto: "Membangun masa depan yang kokoh dan solid.", foto: "" },
+            { id: 37, nama: "SANDIKA AMOS MANIK", panggilan: "Sandyka", gender: "Laki-laki", hobi: "Running", cita: "Atlet", hewan: "Singa", makanan: "Random", motto: "Berlari kencang tanpa pernah menoleh ke belakang.", foto: "" },
+            { id: 38, nama: "NABILLA", panggilan: "Nabilla", gender: "Perempuan", hobi: "Olahraga", cita: "Pt preeport", hewan: "Kelinci", makanan: "Dimsum mentai", motto: "Sehat, kuat, dan siap meraih sukses!", foto: "" }
+        ];
+
+        // GENDER-MATCHED CUTE ILLUSTRATED AVATAR GENERATOR
+        function getStudentAvatar(student) {
+            if (student.foto && student.foto.trim() !== '') {
+                return student.foto;
+            }
+            const seed = encodeURIComponent(student.nama);
+            if (student.gender === 'Laki-laki') {
+                // Boyish cute short hair & pastel cool background
+                return `https://api.dicebear.com/7.x/adventurer/svg?seed=${seed}&hair=short01,short02,short03,short04,short05,short06,short07,short08,short09,short10&backgroundColor=dbeafe,e0e7ff,d1fae5`;
+            } else {
+                // Girly cute long/styled hair & pastel pink/lavender background
+                return `https://api.dicebear.com/7.x/adventurer/svg?seed=${seed}&hair=long01,long02,long03,long04,long05,long06,long07,long08,long09,long10,long11,long12&backgroundColor=ffd5e5,ffe4e6,f3e8ff`;
+            }
+        }
+
+        // PERSISTENT STATE
+        let students = JSON.parse(localStorage.getItem('xdkv2_students_v2')) || defaultStudentsData;
+        let isAdmin = localStorage.getItem('xdkv2_is_admin') === 'true';
+        let adminEmails = JSON.parse(localStorage.getItem('xdkv2_admin_emails')) || [];
+        let activeAdmin = localStorage.getItem('xdkv2_active_admin') || '';
+        let currentFilter = 'ALL';
+
+        // INITIALIZE APP
+        document.addEventListener('DOMContentLoaded', () => {
+            applyFilters();
+            checkAdminStatus();
+            setupListeners();
+        });
+
+        function showToast(msg) {
+            const toast = document.getElementById('coquetteToast');
+            toast.textContent = msg;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2400);
+        }
+
+        // SCREEN SWITCHER + BOTTOM DOCK SYNC
+        function switchView(viewId) {
+            document.querySelectorAll('.view-screen').forEach(s => s.classList.remove('active'));
+            const target = document.getElementById(viewId);
+            if (target) {
+                target.classList.add('active');
+                target.scrollTop = 0;
+            }
+
+            document.querySelectorAll('.dock-item').forEach(item => {
+                item.classList.toggle('active', item.getAttribute('data-target') === viewId);
+            });
+        }
+
+        // SEARCH & FILTER
+        function setGenderFilter(filterType, btnEl) {
+            currentFilter = filterType;
+            document.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
+            btnEl.classList.add('active');
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const q = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = students.filter(s => {
+                const matchText = s.nama.toLowerCase().includes(q) ||
+                                  (s.panggilan || '').toLowerCase().includes(q) ||
+                                  (s.hobi || '').toLowerCase().includes(q) ||
+                                  (s.cita || '').toLowerCase().includes(q);
+                if (!matchText) return false;
+                if (currentFilter === 'Perempuan') return s.gender === 'Perempuan';
+                if (currentFilter === 'Laki-laki') return s.gender === 'Laki-laki';
+                if (currentFilter === 'GAMBAR') return (s.hobi || '').toLowerCase().includes('gambar');
+                return true;
+            });
+            document.getElementById('studentCountBadge').textContent = `${filtered.length} Siswa 🎀`;
+            renderStudents(filtered);
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+        // RENDER STUDENT CARDS
+        function renderStudents(list) {
+            const grid = document.getElementById('studentsGrid');
+            grid.innerHTML = '';
+
+            if (list.length === 0) {
+                grid.innerHTML = `<p style="grid-column:1/-1; text-align:center; padding:30px 0; color:var(--text-secondary);">Tidak ada siswa yang cocok 🎀</p>`;
+                return;
+            }
+
+            list.forEach((student, idx) => {
+                const avatar = getStudentAvatar(student);
+                const isBoy = student.gender === 'Laki-laki';
+                const card = document.createElement('div');
+                card.className = `student-card pop-btn ${isBoy ? 'boy-card' : 'girl-card'}`;
+                card.style.animationDelay = `${Math.min(idx * 0.03, 0.35)}s`;
+                card.innerHTML = `
+                    <div class="avatar-frame">
+                        <img src="${avatar}" alt="${student.nama}">
+                    </div>
+                    <h3>${student.panggilan || student.nama.split(' ')[0]}</h3>
+                    <p>${student.nama}</p>
+                    <span class="hobby-badge">✨ ${student.hobi || 'Kreatif'}</span>
+                    ${isAdmin ? `
+                        <div class="admin-card-tools">
+                            <button class="tool-btn tool-edit pop-btn" onclick="event.stopPropagation(); openEditModal(${student.id})"><i class="fa-solid fa-pen"></i> Edit</button>
+                            <button class="tool-btn tool-del pop-btn" onclick="event.stopPropagation(); deleteStudent(${student.id})"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    ` : ''}
+                `;
+                card.addEventListener('click', () => openStudentModal(student));
+                grid.appendChild(card);
+            });
+        }
+
+        // BIODATA BOTTOM SHEET MODAL (NO INSTAGRAM)
+        function openStudentModal(s) {
+            const avatar = getStudentAvatar(s);
+            const genderIcon = s.gender === 'Laki-laki' ? '🧸' : '🎀';
+            document.getElementById('modalDetails').innerHTML = `
+                <img class="sheet-avatar" src="${avatar}" alt="${s.nama}">
+                <h2 style="font-family:var(--font-serif); text-align:center; font-size:1.25rem; color:var(--text-primary);">${s.nama}</h2>
+                <p style="text-align:center; color:var(--accent-deep); font-weight:700; font-size:0.88rem;">${genderIcon} Panggilan: "${s.panggilan || '-'}"</p>
+                
+                <div class="bio-detail-box">
+                    <div class="bio-item"><strong>Jenis Kelamin</strong><span>${s.gender}</span></div>
+                    <div class="bio-item"><strong>Hobi</strong><span>${s.hobi || '-'}</span></div>
+                    <div class="bio-item"><strong>Cita-cita</strong><span>${s.cita || '-'}</span></div>
+                    <div class="bio-item"><strong>Hewan Kesukaan</strong><span>${s.hewan || '-'}</span></div>
+                    <div class="bio-item"><strong>Makanan Favorit</strong><span>${s.makanan || '-'}</span></div>
+                </div>
+
+                <div class="motto-ribbon-box">
+                    “${s.motto || 'Semangat berkarya di X DKV 2 SMKN 4 BATAM!'}”
+                </div>
+            `;
+            document.getElementById('studentModal').style.display = 'flex';
+        }
+
+        // ADMIN SYSTEM
+        function checkAdminStatus() {
+            const bar = document.getElementById('adminStatusBar');
+            const label = document.getElementById('activeAdminEmail');
+            const adminBtn = document.getElementById('adminBtn');
+
+            if (isAdmin) {
+                bar.style.display = 'flex';
+                label.innerHTML = `👑 ${activeAdmin}`;
+                adminBtn.innerHTML = `<i class="fa-solid fa-crown"></i> Admin On`;
+            } else {
+                bar.style.display = 'none';
+                adminBtn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> Admin`;
+            }
+            renderSavedAdmins();
+            applyFilters();
+        }
+
+        function renderSavedAdmins() {
+            const box = document.getElementById('savedAdminsList');
+            if (adminEmails.length > 0) {
+                box.innerHTML = `<strong>Admin Terdaftar:</strong><br>${adminEmails.join(' • ')}`;
+            } else {
+                box.innerHTML = '';
+            }
+        }
+
+        document.getElementById('adminBtn').addEventListener('click', () => {
+            if (isAdmin) {
+                showToast(`👑 Aktif sebagai ${activeAdmin}`);
+                switchView('studentsView');
+            } else {
+                renderSavedAdmins();
+                document.getElementById('adminLoginModal').style.display = 'flex';
+            }
+        });
+
+        document.getElementById('adminLoginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('adminEmailInput').value.trim();
+            const pass = document.getElementById('adminPasswordInput').value;
+
+            if (pass === '314159') {
+                isAdmin = true;
+                activeAdmin = email;
+                if (!adminEmails.includes(email)) adminEmails.push(email);
+
+                localStorage.setItem('xdkv2_is_admin', 'true');
+                localStorage.setItem('xdkv2_active_admin', email);
+                localStorage.setItem('xdkv2_admin_emails', JSON.stringify(adminEmails));
+
+                closeAllModals();
+                checkAdminStatus();
+                showToast('🎀 Berhasil masuk mode Admin!');
+            } else {
+                showToast('❌ Kode sandi salah!');
+            }
+        });
+
+        function logoutAdmin() {
+            isAdmin = false;
+            activeAdmin = '';
+            localStorage.setItem('xdkv2_is_admin', 'false');
+            localStorage.removeItem('xdkv2_active_admin');
+            checkAdminStatus();
+            showToast('Keluar dari mode Admin');
+        }
+
+        function openAddStudentModal() {
+            document.getElementById('editModalTitle').textContent = 'Tambah Siswa Baru 🎀';
+            document.getElementById('editStudentId').value = '';
+            document.getElementById('editStudentForm').reset();
+            document.getElementById('editStudentModal').style.display = 'flex';
+        }
+
+        function openEditModal(id) {
+            const s = students.find(item => item.id === id);
+            if (!s) return;
+            document.getElementById('editModalTitle').textContent = 'Edit Biodata Siswa 🎀';
+            document.getElementById('editStudentId').value = s.id;
+            document.getElementById('editNama').value = s.nama;
+            document.getElementById('editPanggilan').value = s.panggilan || '';
+            document.getElementById('editGender').value = s.gender;
+            document.getElementById('editHobi').value = s.hobi || '';
+            document.getElementById('editCita').value = s.cita || '';
+            document.getElementById('editHewan').value = s.hewan || '';
+            document.getElementById('editMakanan').value = s.makanan || '';
+            document.getElementById('editMotto').value = s.motto || '';
+            document.getElementById('editFoto').value = '';
+            document.getElementById('editStudentModal').style.display = 'flex';
+        }
+
+        document.getElementById('editStudentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const idVal = document.getElementById('editStudentId').value;
+            const fileInput = document.getElementById('editFoto');
+
+            const payload = {
+                nama: document.getElementById('editNama').value.trim(),
+                panggilan: document.getElementById('editPanggilan').value.trim(),
+                gender: document.getElementById('editGender').value,
+                hobi: document.getElementById('editHobi').value.trim(),
+                cita: document.getElementById('editCita').value.trim(),
+                hewan: document.getElementById('editHewan').value.trim(),
+                makanan: document.getElementById('editMakanan').value.trim(),
+                motto: document.getElementById('editMotto').value.trim()
+            };
+
+            const finalizeSave = (base64Img) => {
+                if (idVal) {
+                    const idx = students.findIndex(s => s.id === parseInt(idVal));
+                    if (idx !== -1) {
+                        students[idx] = { ...students[idx], ...payload, foto: base64Img !== null ? base64Img : students[idx].foto };
+                    }
+                } else {
+                    const newId = students.length ? Math.max(...students.map(s => s.id)) + 1 : 1;
+                    students.push({ id: newId, ...payload, foto: base64Img || '' });
+                }
+                localStorage.setItem('xdkv2_students_v2', JSON.stringify(students));
+                applyFilters();
+                closeAllModals();
+                showToast('🎀 Biodata & foto tersimpan!');
+            };
+
+            if (fileInput.files && fileInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = ev => finalizeSave(ev.target.result);
+                reader.readAsDataURL(fileInput.files[0]);
+            } else {
+                finalizeSave(null);
+            }
+        });
+
+        function deleteStudent(id) {
+            students = students.filter(s => s.id !== id);
+            localStorage.setItem('xdkv2_students_v2', JSON.stringify(students));
+            applyFilters();
+            showToast('🗑️ Siswa dihapus');
+        }
+
+        function closeAllModals() {
+            document.querySelectorAll('.modal-backdrop').forEach(m => m.style.display = 'none');
+        }
+
+        function setupListeners() {
+            document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
+                backdrop.addEventListener('click', (e) => {
+                    if (e.target === backdrop) closeAllModals();
+                });
+            });
+
+            document.getElementById('themeToggle').addEventListener('click', () => {
+                const current = document.documentElement.getAttribute('data-theme');
+                const next = current === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', next);
+                document.getElementById('themeToggle').innerHTML = next === 'dark'
+                    ? '<i class="fa-solid fa-sun"></i>'
+                    : '<i class="fa-solid fa-moon"></i>';
+                showToast(next === 'dark' ? '🌙 Dark Coquette Mode' : '🎀 Light Coquette Mode');
+            });
+        }
+    </script>
+</body>
+</html>
